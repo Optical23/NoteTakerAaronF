@@ -1,9 +1,11 @@
 const express = require('express');
+const router = express.Router();
 const path = require('path');
 const fs = require('fs');
 
 const notes = require('./db/db.json');
 const app = express();
+
 const PORT = 3001;
 
 app.get('/', (req, res) => {
@@ -14,8 +16,8 @@ app.get('/notes', (req, res) => {
 
     console.info(`${req.method} request received to get notes`);
 });
-app.get('/api/notes', (req, res) => {
-    console.info(`${req.method + notes}`)
+router.get('/api/notes', (req, res) => {
+    res.json(`${req.method} request received to get reviews`);
 });
 
 
