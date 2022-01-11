@@ -29,12 +29,12 @@ app.get('/api/notes', (req, res) => {
   //   let notes = [];
   //   notes.push(db[i]);
   // }
-  for (let i = 0; i < db.length; i++) {
-    const element = array[i];
+//   for (let i = 0; i < db.length; i++) {
+//     const element = array[i];
     
     
-  }
-  res.json(db[0]);
+//   }
+  res.json(db);
 });
 
 app.post('/api/notes', (req, res) => {
