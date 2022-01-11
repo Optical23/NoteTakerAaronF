@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const db = require('./db/db.json');
 const { response } = require('express');
-const uuid = require('../../05-Data-Persistence/Unsolved/helpers/uuid');
+const uuid = require('uuid');
 
 const app = express();
 const PORT = 3001;
