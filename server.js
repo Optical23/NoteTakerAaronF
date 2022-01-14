@@ -58,7 +58,7 @@ var rewritedb = function(note) {
 }
 //delete request
 app.delete("/api/notes/:id", (req, res) => {
-  //simple id comparing and delete from the array and resetting the db.json file
+  //simple id assigning then comparing and delete from the array then resetting the db.json file
   let id = req.params.id.toString();
   for (let i = 0; i < db.length; i++) {
     if(db[i].id === id){
